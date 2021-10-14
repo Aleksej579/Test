@@ -1,0 +1,55 @@
+.deals_of_the_day {
+    figure:hover {
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    figure {
+        width: 20%;
+        background-color: white;
+        padding: 25px;
+        @media screen and (max-width: $tablet-l) {
+            width: 18%;
+        }
+        @media screen and (max-width: $mob-l) {
+            width: Calc(100% - 50px);
+        }
+        img {
+            width: 100%;
+        }
+        figcaption {
+            font-size: 16px;
+            .wrapper_star {
+                display: flex;
+                span {
+                    height: 25px;
+                    width: 25px;
+                    display: block;
+                    background-image: url('./images/star.png');
+                    background-position: 50% 50%;
+                    background-size: 50%;
+                    background-repeat: no-repeat;
+                }
+                span.star_fill {
+                    background-image: url('./images/star_fill.png');
+                }
+            }
+            p.description_product {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+            p.price_product {
+                span.price {
+                    font-weight: 700;
+                }
+                span:not(.price) {
+                    color: $color-grey;
+                    font-size: 13px;
+                    margin-left: 10px;
+                    text-decoration: line-through;
+                }
+            }
+        }
+    }
+}
