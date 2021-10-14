@@ -6,10 +6,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Intertool</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
-    <h1>Test</h1>
+    <header class="main_header">
+        <div class="logo"></div>
+        <form id="search">
+            <input type="text" placeholder="search" class="search"/>
+            <input type="submit" value="" />
+        </form>
+        <nav>
+            <ul>
+                <li><img src="./img/user.png" /></li>
+                <li><a href="#"><img src="./img/wishlist.png" /></a></li>
+                <li><a href="#"><img src="./img/cart.png" /></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Swiper -->
+        <article class="swiper mySwiper">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./img/slide1.jpg" /></div>
+            <div class="swiper-slide"><img src="./img/slide2.png" /></div>
+            <div class="swiper-slide"><img src="./img/slide2.png" /></div>
+            </div>
+        </article>
+
+        <article class="shop_by_category">
+            <header>
+                <h1>shop by category</h1>
+            </header>
+            <section>
+                <figure>
+                    <img src="./img/headphones.png" alt="">
+                    <figcaption>Dinig Tables</figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/sofa.png" alt="">
+                    <figcaption>Furniture</figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/mobile.png" alt="">
+                    <figcaption>Herbs</figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/sofa.png" alt="">
+                    <figcaption>Dinig Tables</figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/headphones.png" alt="">
+                    <figcaption>Sports</figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/chair.png" alt="">
+                    <figcaption>Desctops</figcaption>
+                </figure>
+            </section>
+        </article>
+        <article>
+            <header>
+                <h1>deals of the day</h1>
+            </header>
+            <section></section>
+        </article>
+        <article>
+            <header>
+                <h1>latest news</h1>
+            </header>
+            <section></section>
+        </article>
+    </main>
+
+     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 
 </html>
