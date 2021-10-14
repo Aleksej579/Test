@@ -1,0 +1,70 @@
+.latest_news {
+    figure {
+        width: 30%;
+        @media screen and (max-width: $mob-l) {
+            width: 100%;
+        }
+        span.badge_data {
+            display: block;
+            width: max-content;
+            padding: 10px;
+            background-color: $marker;
+            border-radius: 5px;
+            transform: translate(25px, 55px);
+            @media screen and (max-width: $tablet-l) {
+                transform: translate(5px, 33px);
+                font-size: 14px;
+                padding: 6px;
+            }
+        }
+        img {
+            width: 100%;
+        }
+        figcaption {
+            width: 80%;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            transform: translateY(-50px);
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            display: flex;
+            flex-direction: column;
+            font-size: 14px;
+            @media screen and (max-width: $tablet-l) {
+                transform: translateY(0);
+                width: auto;
+            }
+            a.coment_news {
+                color: $header-bg;
+                text-decoration: none;
+                line-height: 18px;
+            }
+            a.coment_news:before {
+                content: "";
+                display: block;
+                height: 18px;
+                width: 18px;
+                background-image: url('./images/comment.png');
+                background-position: 50% 50%;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                float: left;
+                margin-right: 10px;
+            }
+            p.title_news {
+                font-size: 18px;
+                font-weight: 700;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            p.text_news {
+                color: $header-bg;
+                height: 29px;
+overflow: hidden;
+            }
+        }
+    }
+}
