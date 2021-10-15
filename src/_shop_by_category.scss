@@ -1,10 +1,12 @@
 .shop_by_category {
     figure:hover {
+        opacity: 0.5;
         @media screen and (max-width: $mob-l) {
             box-shadow: 0 0 10px rgba(0,0,0,0.5);display: flex;
         }
     }
     figure {
+        cursor: pointer;
         img {
             border: 23px solid $color-border-radius;
             border-radius: 50%;

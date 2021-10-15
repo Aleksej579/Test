@@ -23,11 +23,13 @@ main {
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 50px;
+    padding-top: 80px;
   }
   @media screen and (max-width: $mob-l) {
     padding-left: 5px;
     padding-right: 5px;
     padding-bottom: 25px;
+    padding-top: 50px;
   }
 }
 
@@ -37,6 +39,9 @@ main article:not(.swiper) {
     text-align: center;
     font-size: 28px;
     text-transform: uppercase;
+  }
+  h2.latest_news {
+    text-transform: capitalize;
   }
   .wrapper_section {
     display: flex;

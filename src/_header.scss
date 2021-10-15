@@ -6,6 +6,9 @@ header.main_header {
     align-items: center;
     @media screen and (max-width: $tablet-l) {
       height: 80px;
+      position: fixed;
+      width: 100%;
+      z-index: 100;
     }
     @media screen and (max-width: $mob-l) {
       height: 50px;
