@@ -18,9 +18,9 @@
         </form>
         <nav>
             <ul>
-                <li id="signIn"><img src="./img/user.png" /></li>
-                <li><a href="#"><img src="./img/wishlist.png" /></a></li>
-                <li><a href="#"><img src="./img/cart.png" /></a></li>
+                <li id="signIn"><img src="./img/user.png" alt="test-img" /></li>
+                <li><a href="#"><img src="./img/wishlist.png" alt="test-img" /></a></li>
+                <li><a href="#"><img src="./img/cart.png" alt="test-img" /></a></li>
             </ul>
         </nav>
     </header>
@@ -29,17 +29,15 @@
         <!-- Swiper -->
         <article class="swiper mySwiper">
             <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="./img/slide1.jpg" /></div>
-            <div class="swiper-slide"><img src="./img/slide2.png" /></div>
-            <div class="swiper-slide"><img src="./img/watch.png" /></div>
+            <div class="swiper-slide"><img src="./img/slide1.jpg" alt='test-img' /></div>
+            <div class="swiper-slide"><img src="./img/slide2.png" alt='test-img' /></div>
+            <div class="swiper-slide"><img src="./img/watch.png" alt='test-img' /></div>
             </div>
         </article>
 
         <article class="shop_by_category">
-            <header>
-                <h1>shop by category</h1>
-            </header>
-            <section>
+            <h2>shop by category</h2>
+            <div class='wrapper_section'>
                 <figure>
                     <img src="./img/headphones.png" alt="">
                     <figcaption>Dinig Tables</figcaption>
@@ -64,14 +62,12 @@
                     <img src="./img/chair.png" alt="">
                     <figcaption>Desctops</figcaption>
                 </figure>
-            </section>
+            </div>
         </article>
 
         <article class="deals_of_the_day">
-            <header>
-                <h1>deals of the day</h1>
-            </header>
-            <section>
+            <h2>deals of the day</h2>
+            <div class='wrapper_section'>
                 <figure>
                     <a href="#"><img src="./img/vaza.png" alt=""></a>
                     <figcaption>
@@ -137,14 +133,12 @@
                         </p>
                     </figcaption>
                 </figure>
-            </section>
+            </div>
         </article>
 
         <article class="latest_news">
-            <header>
-                <h1>latest news</h1>
-            </header>
-            <section>
+            <h2>latest news</h2>
+            <div class='wrapper_section'>
                 <figure>
                     <span class="badge_data">01 Marc, 2021</span>
                     <a href="#"><img src="./img/news2.png" alt=""></a>
@@ -172,17 +166,33 @@
                         <p class="text_news">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </figcaption>
                 </figure>
-            </section>
+            </div>
         </article>
     </main>
 
-    <div id="dialog">
+    <div id="dialog" class="dialog">
         <div class="wrapper_form_dialog">
             <form>
-                <button id="btn_dialog_hide">Close dialog text</button>
+                <span id="btn_dialog_hide">&times</span>
     
-                <input type="email" value="" placeholder="test@gmail.com" />
-                <input type="password" value="" placeholder="*******" />
+                <div class="wrapperForInput">
+                    <label for="email">Enter your e-mail:</label>
+                    <input type="email" id="email" value="" placeholder="e-mail" required />
+                    <span id="errorEmail">The e-mail does not meet the requirement</span>
+                </div>
+
+                <div class="wrapperForInput">
+                    <label for="pass">Enter your password:</label>
+                    <input 
+                    type="password" 
+                    id="pass" 
+                    value="" 
+                    placeholder="password" 
+                    required
+                    minlength="8" />
+                    <span id="errorPass">The password does not meet the requirement</span>
+                </div>
+
                 <input type="submit" value="Log in" />
             </form>
         </div>
