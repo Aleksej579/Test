@@ -1,0 +1,89 @@
+header.main_header {
+    height: 110px;
+    background-color: $header-bg;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width: $tablet-l) {
+      height: 80px;
+      position: fixed;
+      width: 100%;
+      z-index: 100;
+    }
+    @media screen and (max-width: $mob-l) {
+      height: 50px;
+    }
+    .logo {
+        height: 56px;
+        width: 184px;
+        background: url('./images/logo_1.png');
+        background-position: 50% 50%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        @media screen and (max-width: $notebook) {
+          width: 15%;
+        }
+        @media screen and (max-width: $mob-l) {
+          width: 30%;
+        }
+      }
+    #search {
+      width: 55%;
+      display: flex;
+      .search[placeholder] {
+        padding-left: 20px;
+        font-size: 20px;
+        @media screen and (max-width: $notebook) {
+          font-size: 15px;
+        }
+      }
+      @media screen and (max-width: $mob-l) {
+        display: none;
+      }
+      .search {
+        border: none;
+        border-radius: 5px 0 0 5px;
+        height: 56px; 
+        width: 100%;  
+        @media screen and (max-width: $notebook) {
+          height: 36px;
+        }
+      }
+      input[type='submit'] {
+        width: 56px;
+        background: none;
+        border: none;
+        background-color: $marker;
+        background-image: url('./images/search.png');
+        background-position: 50% 50%;
+        background-size: 50%;
+        background-repeat: no-repeat;
+        cursor: pointer;
+      }
+    }
+    nav {
+      width: 15%;
+      max-width: 150px;
+      padding-right: 20px;
+      @media screen and (max-width: $mob-l) {
+        width: 50%;
+      }
+      ul {
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: $notebook) {
+          li img {
+            width: 20px;
+          }
+        }
+        @media screen and (max-width: $mob-l) {
+          width: 70%;
+          float: right;
+        }
+        li {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  

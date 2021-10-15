@@ -1,0 +1,54 @@
+@import "_css_reset.css";
+@import "_variable.scss";
+@import "_header.scss";
+@import "_slider.css";
+@import "_shop_by_category.scss";
+@import "_deals_of_the_day.scss";
+@import "_latest_news.scss";
+@import "_dialog.scss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  background-color: $primary-color;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+main {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  @media screen and (max-width: $tablet-l) {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 50px;
+    padding-top: 80px;
+  }
+  @media screen and (max-width: $mob-l) {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 25px;
+    padding-top: 50px;
+  }
+}
+
+main article:not(.swiper) {
+  margin-top: 100px;
+  h2 {
+    text-align: center;
+    font-size: 28px;
+    text-transform: uppercase;
+  }
+  h2.latest_news {
+    text-transform: capitalize;
+  }
+  .wrapper_section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    @media screen and (max-width: $mob-l) {
+      flex-direction: column;
+    }
+  }
+}
